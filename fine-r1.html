@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Fine-R1 evaluation — Esther Qian</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&amp;family=Figtree:wght@400;500;600&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap">
+<style>
+html{scroll-behavior:smooth}body{margin:0;background:#F1F2EE}
+a{color:#5B4262}a:hover{color:#3B2A40}
+</style>
+</head>
+<body>
+<div style="background: #F1F2EE; color: #1E2022; font-family: 'Figtree', system-ui, sans-serif; font-size: 17px; line-height: 1.6">
+<div style="max-width: 1040px; margin: 0 auto; padding: 0 24px; box-sizing: border-box">
+<header style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 16px; padding: 28px 0">
+<a href="index.html" style="font-family: 'Newsreader', serif; font-style: italic; font-size: 24px; text-decoration: none; color: #1E2022; padding: 6px 0">Esther</a>
+<nav style="display: flex; flex-wrap: wrap; gap: 28px; font-size: 15px">
+<a href="index.html#work" style="text-decoration: none; padding: 10px 0">Work</a>
+<a href="index.html#outside" style="text-decoration: none; padding: 10px 0">Outside work</a>
+<a href="cv.pdf" style="text-decoration: none; padding: 10px 0">CV</a>
+<a href="mailto:tq23@duke.edu" style="text-decoration: none; padding: 10px 0">Contact</a>
+</nav>
+</header>
+
+<section style="display: flex; flex-direction: column; gap: 16px; padding: 40px 0 48px">
+<a href="index.html#work" style="font-size: 15px; padding: 10px 0; align-self: flex-start; text-decoration: none">← All work</a>
+<div style="font-size: 14px; color: #474D49">Research · Mar 2026 – present · Advised by Prof. Kaizhu Huang</div>
+<h1 style="margin: 0; max-width: 820px; font-family: 'Newsreader', serif; font-weight: 400; font-size: clamp(38px, 5.5vw, 60px); line-height: 1.08; letter-spacing: -0.01em">Does the model reason, or answer by habit?</h1>
+<p style="margin: 0; font-size: 19px; color: #3A403C">Fine-grained vision-language model evaluation</p>
+</section>
+
+<section style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(420px, 100%), 1fr)); gap: 40px 56px; align-items: start; padding-bottom: 88px">
+<div style="display: flex; flex-direction: column; gap: 28px">
+<div style="display: flex; flex-direction: column; gap: 6px">
+<h2 style="margin: 0; font-size: 15px; font-weight: 600; color: #5B4262">The question</h2>
+<p style="margin: 0; color: #2C3230">Fine-R1 is a vision-language model built for fine-grained visual recognition: telling apart categories that look almost the same. When its performance changes, I want to know whether that reflects a reasoning limitation, a systematic response bias, or an artifact of how the evaluation was set up.</p>
+</div>
+<div style="display: flex; flex-direction: column; gap: 6px">
+<h2 style="margin: 0; font-size: 15px; font-weight: 600; color: #5B4262">What I do</h2>
+<p style="margin: 0; color: #2C3230">I design controlled experiments on Fine-R1 and its Qwen base model, and build Python pipelines for large-scale closed- and open-world testing. I hold the image and the question fixed, change one evaluation condition at a time, and look at how the answers move and which failure patterns keep recurring.</p>
+</div>
+<div style="display: flex; flex-direction: column; gap: 6px">
+<h2 style="margin: 0; font-size: 15px; font-weight: 600; color: #5B4262">Where it stands</h2>
+<p style="margin: 0; color: #2C3230">Ongoing. Results are not public yet.</p>
+</div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 10px; min-width: 0">
+<div style="background: #FBFBF9; border-radius: 6px; padding: 20px; display: flex; flex-direction: column; gap: 10px; font-family: 'IBM Plex Mono', monospace; font-size: 14px; line-height: 1.45">
+<div style="color: #474D49">original order</div>
+<div style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px"><div style="border: 2px solid #5B4262; background: #E6E1E8; padding: 9px 6px; border-radius: 4px; text-align: center">A<br>737-800</div><div style="border: 1px solid #C6CBC2; background: #FFFFFF; padding: 10px 6px; border-radius: 4px; text-align: center">B<br>A320</div><div style="border: 1px solid #C6CBC2; background: #FFFFFF; padding: 10px 6px; border-radius: 4px; text-align: center">C<br>757-200</div><div style="border: 1px solid #C6CBC2; background: #FFFFFF; padding: 10px 6px; border-radius: 4px; text-align: center">D<br>MD-80</div></div>
+<div style="color: #474D49; padding-top: 6px">same image, options reordered</div>
+<div style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px"><div style="border: 1px solid #C6CBC2; background: #FFFFFF; padding: 10px 6px; border-radius: 4px; text-align: center">A<br>MD-80</div><div style="border: 1px solid #C6CBC2; background: #FFFFFF; padding: 10px 6px; border-radius: 4px; text-align: center">B<br>A320</div><div style="border: 2px solid #A8641A; background: #F3E6D3; padding: 9px 6px; border-radius: 4px; text-align: center">C<br>737-800</div><div style="border: 1px solid #C6CBC2; background: #FFFFFF; padding: 10px 6px; border-radius: 4px; text-align: center">D<br>757-200</div></div>
+</div>
+<div style="font-size: 14px; color: #474D49">Fig. 1 — Does the answer follow the content, or the position? (schematic)</div>
+</div>
+</section>
+
+<footer id="contact" style="padding: 48px 0 72px; border-top: 1px solid #C6CBC2; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 24px">
+<p style="margin: 0; font-family: 'Newsreader', serif; font-size: 30px; line-height: 1.2">Say hello — <a href="mailto:tq23@duke.edu">tq23@duke.edu</a></p>
+<div style="display: flex; flex-wrap: wrap; gap: 24px; font-size: 15px">
+<a href="https://github.com/Esther016" style="padding: 10px 0">GitHub</a>
+<a href="https://www.linkedin.com/in/tianyue-qian/" style="padding: 10px 0">LinkedIn</a>
+<a href="cv.pdf" style="padding: 10px 0">CV</a>
+</div>
+</footer>
+</div>
+</div>
+</body>
+</html>
